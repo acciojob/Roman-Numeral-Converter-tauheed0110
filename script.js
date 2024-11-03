@@ -16,7 +16,7 @@ function convertToRoman(num) {
     ];
 
     let result = '';
-    for(const {value, numeral} in romanNumerals){
+    for(const {value, numeral} of romanNumerals){
         while(num >= value){
             result += numeral;
             num -= value;
